@@ -1,0 +1,70 @@
+unit U_Cronometro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.MPlayer, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Buttons;
+
+type
+  TFrmCronometro = class(TForm)
+    Timer1: TTimer;
+    LblSegundos: TLabel;
+    Label1: TLabel;
+    LblMinutos: TLabel;
+    BtnPause: TSpeedButton;
+    BtnPlay: TSpeedButton;
+    BtnStop: TSpeedButton;
+    procedure Timer1Timer(Sender: TObject);
+    procedure BtnPlayClick(Sender: TObject);
+    procedure BtnStopClick(Sender: TObject);
+    procedure BtnPauseClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCronometro: TFrmCronometro;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmCronometro.BtnPauseClick(Sender: TObject);
+begin
+  Timer1.Enabled := false;
+end;
+
+procedure TFrmCronometro.BtnPlayClick(Sender: TObject);
+begin
+  Timer1.Enabled := true;
+end;
+
+procedure TFrmCronometro.BtnStopClick(Sender: TObject);
+begin
+  Timer1.Enabled := false;
+  LblSegundos.Caption := '0';
+  LblMinutos.Caption := '0';
+end;
+
+procedure TFrmCronometro.Timer1Timer(Sender: TObject);
+  var seg, min, cont : Integer;
+begin
+    seg := StrToInt(LblSegundos.Caption);
+    min := StrToInt(LblMinutos.Caption);
+    cont := seg + 1;
+
+    LblSegundos.Caption := IntToStr(cont);
+
+    if cont = 60 then
+    begin
+      LblMinutos.Caption := IntToStr((StrToInt(LblMinutos.Caption) + 1));
+      LblSegundos.Caption := '0';
+    end;
+
+end;
+
+end.

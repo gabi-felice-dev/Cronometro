@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/10/18 15:20:18.393,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/18 15:20:44.790,C:\Git\Delphi\Cronometro\Cronometro.dfm=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/10/18 15:20:44.790,C:\Git\Delphi\Cronometro\Cronometro.pas=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/18 15:21:25.791,C:\Git\Delphi\Cronometro\ProjetoCronometro.dproj=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/10/18 15:30:04.660,C:\Git\Delphi\Cronometro\U_Cronometro.pas=C:\Git\Delphi\Cronometro\Cronometro.pas</Transaction>
+    <Transaction>2022/10/18 15:30:04.660,C:\Git\Delphi\Cronometro\U_Cronometro.dfm=C:\Git\Delphi\Cronometro\Cronometro.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
